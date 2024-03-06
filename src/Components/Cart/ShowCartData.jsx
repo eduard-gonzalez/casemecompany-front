@@ -36,8 +36,8 @@ const ShowCartData = () => {
           data={{
             customClass: 'no-data-added',
             imageUrl: emptyImage,
-            title: 'No Items Added',
-            description: 'It appears that nothing has been added to your cart. Explore categories if you want to.',
+            title: 'No se han agregado productos.',
+            description: 'No se han agregado productos a su carrito de compras. ¡Comience a agregar productos ahora!',
             height: 50,
             width: 50,
           }}
