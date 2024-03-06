@@ -33,7 +33,6 @@ const NewsLetterModal = () => {
           </div>
           <div className='modal-content content-padding'>
             <div>
-              <Image src={Logo} className='modal-logo' alt='newsletter' height={17} width={100} />
               <h2>
                 15% <span>off</span>
               </h2>
@@ -41,7 +40,7 @@ const NewsLetterModal = () => {
               <p>{t('newsletterDescription')}</p>
               <Form className='modal-form'>
                 <InputGroup className='modal-form-box'>
-                  <Input type='email' placeholder='Your email here' />
+                  <Input type='email' placeholder='Correo Electrónico' />
                   <Btn className='input-group-text' type='button' title='Submit' onClick={() => setModal(false)} />
                 </InputGroup>
               </Form>
