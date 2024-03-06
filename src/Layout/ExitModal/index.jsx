@@ -50,7 +50,7 @@ const ExitModal = () => {
         </div>
         <div className="modal-content">
           <div>
-            <Image src={Logo} className="modal-logo" alt="newsletter" height={17} width={100} />
+            
             <h2 className="text-title">
               {t("Wait")}
               <span className="theme-color">!</span>

@@ -34,7 +34,7 @@ const nextConfig = {
         hostname: "casemeapi.test",
       },
       {
-        protocol: "http",
+        protocol: "https",
         hostname: "casemecompany-backend.macroevo.me",
       },
     ],
