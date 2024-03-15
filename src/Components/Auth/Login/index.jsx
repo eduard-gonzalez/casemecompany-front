@@ -29,8 +29,8 @@ const LoginContent = () => {
             <AuthHeadings heading1={'WelcomeToCaseme'} heading2={'LogInYourAccount'} />
 
             <div className='input-box'>
-              <LoginForm />
-            </div>
+{/*               <LoginForm />
+ */}            </div>
 
             <div className='other-log-in'>
               <h6>{t('or')}</h6>

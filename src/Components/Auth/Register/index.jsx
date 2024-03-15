@@ -29,8 +29,8 @@ const RegisterContent = () => {
             <AuthHeadings heading1={'WelcomeToCaseme'} heading2={'CreateNewAccount'} />
 
             <div className='input-box'>
-              <RegisterForm />
-            </div>
+{/*               <RegisterForm />
+ */}            </div>
 
             <div className='other-log-in'>
               <h6>{t('or')}</h6>
