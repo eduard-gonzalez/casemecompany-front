@@ -38,7 +38,7 @@ const DeliveryAddress = ({ type, title, address, modal, mutate, isLoading, setMo
                 </Row>
               ) : (
                 <div className='empty-box'>
-                  <h2>{t('NoaddressFound')}</h2>
+                  <h2>{t('No se encontraron direcciones')}</h2>
                 </div>
               )}
             </>

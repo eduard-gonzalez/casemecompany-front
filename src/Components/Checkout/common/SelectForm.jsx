@@ -16,8 +16,8 @@ const SelectForm = ({ values, isLoading, data, setModal }) => {
       <Row>
         <SimpleInputField
           nameList={[
-            { name: 'title', placeholder: t('EnterTitle'), toplabel: 'Title', colprops: { xs: 12 }, require: 'true' },
-            { name: 'street', placeholder: t('EnterAddress'), toplabel: 'Address', colprops: { xs: 12 }, require: 'true' },
+            { name: 'title', placeholder: t('Titulo (Ej: Mi Casa)'), toplabel: 'Titulo de la ubicación', colprops: { xs: 12 }, require: 'true' },
+            { name: 'street', placeholder: t('Dirección'), toplabel: 'Address', colprops: { xs: 12 }, require: 'true' },
           ]}
         />
         <SearchableSelectInput
@@ -26,26 +26,26 @@ const SelectForm = ({ values, isLoading, data, setModal }) => {
               name: 'country_id',
               require: 'true',
               title: 'Country',
-              toplabel: 'Country',
+              toplabel: 'País de residencia',
               colprops: { xxl: 6, lg: 12, sm: 6 },
               inputprops: {
                 name: 'country_id',
                 id: 'country_id',
                 options: data,
-                defaultOption: 'Select state',
+                defaultOption: 'Seleccionar país',
               },
             },
             {
               name: 'state_id',
               require: 'true',
               title: 'State',
-              toplabel: 'State',
+              toplabel: 'Estado',
               colprops: { xxl: 6, lg: 12, sm: 6 },
               inputprops: {
                 name: 'state_id',
                 id: 'state_id',
                 options: values?.['country_id'] ? data?.filter((country) => Number(country.id) === Number(values?.['country_id']))?.[0]?.['state'] : [],
-                defaultOption: 'Select state',
+                defaultOption: 'Seleccionar estado',
               },
               disabled: values?.['country_id'] ? false : true,
             },
@@ -53,13 +53,13 @@ const SelectForm = ({ values, isLoading, data, setModal }) => {
         />
         <SimpleInputField
           nameList={[
-            { name: 'city', placeholder: t('EnterCity'), toplabel: 'City', colprops: { xxl: 6, lg: 12, sm: 6 }, require: 'true' },
-            { name: 'pincode', placeholder: t('EnterPincode'), toplabel: 'Pincode', colprops: { xxl: 6, lg: 12, sm: 6 }, require: 'true' },
+            { name: 'city', placeholder: t('Ciudad'), toplabel: 'Ciudad', colprops: { xxl: 6, lg: 12, sm: 6 }, require: 'true' },
+            { name: 'pincode', placeholder: t('Codigo Postal'), toplabel: 'Codigo Postal', colprops: { xxl: 6, lg: 12, sm: 6 }, require: 'true' },
           ]}
         />
         <div className='country-input'>
           <SimpleInputField
-            nameList={[{ name: 'phone', type: 'number', placeholder: t('EnterPhoneNumber'), require: 'true', toplabel: 'Phone', colprops: { xs: 12 }, colclass: 'country-input-box' }]}
+            nameList={[{ name: 'phone', type: 'number', placeholder: t('Ingrese su telefono'), require: 'true', toplabel: 'Phone', colprops: { xs: 12 }, colclass: 'country-input-box' }]}
           />
           <SearchableSelectInput
             nameList={[
